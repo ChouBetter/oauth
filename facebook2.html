@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            let code = new URLSearchParams(window.location.search).get("code");
+            console.log(code);
+            document.querySelector("#code").innerHTML = "code: " + code;
+
+        });
+
+        function login() {}
+
+        function binding() {}
+    </script>
+</head>
+
+<body>
+    <div id="code"></div>
+    username: <input type="input" style="width: 320px;" /><br />
+    password: <input type="input" style="width: 320px;" /><br />
+    <input type="button" value="Login" style="width: 240px;height: 60px;" onclick="login()" /><br />
+    <input type="button" value="Binding" style="width: 240px;height: 60px;" onclick="binding()" />
+    <div id="response"></div>
+</body>
+
+</html>
